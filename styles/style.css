@@ -1,5 +1,71 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+.header__rec::before {
+  content: 'REC';
+  margin-right: 10px;
+}
+
+.header__rec::after {
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid black;
+  content: '';
+}
+
+.header__rec {
+  position: absolute;
+  top: 10px;
+  right:10px;
+  display: flex;
+  align-items: center;
+}
+
+.header__theme-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__theme-menu li {
+  list-style-type: none;
+}
+
+.header__theme-menu-list {
+
+}
+
+.header__theme-menu button {
+  border: none;
+  background-color: transparent;
+  text-transform: lowercase;
+  font-family: 'IBM Plex mono',sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  padding: 1.5px 13px 1.5px 13px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 96px;
+}
+
+.header__text {
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .page {
+  font-family: 'IBM Plex mono',sans-serif;
+  padding: 10px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
