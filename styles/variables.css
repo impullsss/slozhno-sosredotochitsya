@@ -4,8 +4,11 @@
 */
 
 :root {
-  --main-color:#000028;
-  --additional-color:#FF0070;
-  --text-color:#FFF;
-  --title-color:#DB00FF;
+  --page-padding: 10px;
+}
+
+@media screen and (min-width : 768px){
+  :root {
+    --page-padding: 20px;
+  }
 }

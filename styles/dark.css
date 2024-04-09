@@ -10,3 +10,10 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+:root {
+  --logo-color: #DB00FF;
+  --bg-color: #000028;
+  --text-color:#F1B2CE;
+  --accent-color:#FF0070;
+}
