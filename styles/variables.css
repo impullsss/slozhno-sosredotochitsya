@@ -6,15 +6,15 @@
 :root {
   --page-padding: 10px;
   --main-padding: 40px;
-  --topic-gap:50px;
-  --photo-gap:10px;
+  --topic-gap: 50px;
+  --photo-gap: 10px;
 }
 
-@media screen and (min-width : 768px){
+@media screen and (min-width: 768px) {
   :root {
     --page-padding: 20px;
     --main-padding: 60px;
-    --topic-gap:80px;
-    --photo-gap:20px;
+    --topic-gap: 80px;
+    --photo-gap: 20px;
   }
 }
