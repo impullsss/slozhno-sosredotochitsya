@@ -8,6 +8,7 @@
   --main-padding: 40px;
   --topic-gap: 50px;
   --photo-gap: 10px;
+  --font-style: "IBM Plex Mono";
 }
 
 @media screen and (min-width: 768px) {
