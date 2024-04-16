@@ -13,12 +13,16 @@
   --bg-color: #000028;
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
+  --theme-color:#000028;
   --bg-image: url(../images/cover-image-dark.png);
+  --button-hover:rgba(255 0 70 / 0.4);
+  --secondary-color:#ff0070;
 }
 
 .page.theme_dark .header__rec {
   display: flex;
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -26,9 +30,13 @@
     --bg-color: #000028;
     --text-color: #f1b2ce;
     --accent-color: #ff0070;
+    --theme-color:#000028;
     --bg-image: url(../images/cover-image-dark.png);
+    --button-hover:rgba(255 0 70 / 0.4);
+    --secondary-color:#ff0070;
   }
   .header__rec {
     display: flex;
   }
+  
 }

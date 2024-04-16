@@ -1,11 +1,10 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+
 
 .page {
   font-family: var(--font-style), monospace;
-  padding: var(--page-padding);
+  padding: var(--page-padding) var(--page-padding) 0 var(--page-padding);
   background-color: var(--bg-color);
   background-attachment: fixed;
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: var(--bg-image);
   background-size: cover;
   background-position: bottom;
@@ -18,6 +17,7 @@
   align-items: center;
   padding-bottom: calc(var(--page-padding) * 2);
   position: relative;
+  min-height: 100vh;
 }
 
 .decorated-zone {
@@ -28,7 +28,7 @@
   content: "";
   width: 25px;
   height: 25px;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--secondary-color);
   position: absolute;
   bottom: calc(var(--page-padding) * 2);
   left: 0;
@@ -41,36 +41,12 @@
   width: 25px;
   height: 25px;
   position: absolute;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--secondary-color);
   top: 0;
   right: 0;
   border-bottom: none;
   border-left: none;
 }
-
-/* .header::before {
-  content: "";
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  border: 1px solid var(--accent-color);
-  top: 0;
-  right: 0;
-  border-bottom: none;
-  border-left: none;
-}
-
-.header::after {
-  content: "";
-  width: 25px;
-  height: 25px;
-  border: 1px solid var(--accent-color);
-  position: absolute;
-  bottom: calc(var(--page-padding) * 2);
-  left: 0;
-  border-top: none;
-  border-right: none;
-} */
 
 .header__rec {
   position: absolute;
@@ -115,8 +91,9 @@
   height: 26px;
   width: 70px;
   line-height: 18px;
-  color: var(--accent-color);
+  color: var(--secondary-color);
   background-color: transparent;
+  cursor: pointer
 }
 
 .theme {
@@ -124,7 +101,7 @@
   font-size: 18px;
   line-height: 23.4px;
   background-color: var(--accent-color);
-  color: var(--bg-color);
+  color: var(--theme-color);
 }
 
 .topic__cell h5 {
@@ -139,7 +116,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
-  color: var(--accent-color);
+  color: var(--secondary-color);
 }
 
 .text {
@@ -208,43 +185,26 @@
   position: relative;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
-/* .footer::before {
-  content: "";
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  border: 1px solid var(--accent-color);
-  top: calc(var(--page-padding));
-  right: 0;
-  border-bottom: none;
-  border-left: none;
-}
-
-.footer::after {
-  content: "";
-  width: 25px;
-  height: 25px;
-  border: 1px solid var(--accent-color);
-  position: absolute;
-  bottom: calc(var(--page-padding));
-  left: 0;
-  border-top: none;
-  border-right: none;
-} */
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--secondary-color);
   pointer-events: none;
 }
 
 .header__theme-menu-item:hover {
-  border: 1px solid var(--accent-color, 0.4);
+  border: 1px solid var(--button-hover);
 }
 
 .header__theme-menu-item:focus {
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--secondary-color);
 }
 
 .text-link {
@@ -253,7 +213,7 @@
 }
 
 .text-link:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid var(--text-color) ;
 }
 
 .text-link:focus {
@@ -335,3 +295,4 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+

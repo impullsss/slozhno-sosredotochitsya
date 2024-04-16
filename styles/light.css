@@ -13,12 +13,17 @@
   --bg-color: #fff1f7;
   --text-color: #353430;
   --accent-color: #ff8dcb;
+  --theme-color:#353430;
   --bg-image: url(../images/cover-image-light.png);
+  --button-hover:rgba(50 49 45 / 0.4);
+  --secondary-color:#353430;
 }
 
 .page.theme_light .header__rec {
   display: none;
 }
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -26,9 +31,13 @@
     --bg-color: #fff1f7;
     --text-color: #353430;
     --accent-color: #ff8dcb;
+    --theme-color:#353430;
     --bg-image: url(../images/cover-image-light.png);
+    --button-hover:rgba(50 49 45 / 0.4);
+    --secondary-color:#353430;
   }
   .header__rec {
     display: none;
   }
+  
 }
