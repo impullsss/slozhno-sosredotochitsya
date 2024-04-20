@@ -194,7 +194,7 @@
   pointer-events: none;
 }
 
-.header__theme-menu-item:hover {
+.header__theme-menu-button:hover {
   border: 1px solid var(--button-hover);
 }
 
