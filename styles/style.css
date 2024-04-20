@@ -21,7 +21,7 @@
 }
 
 .decorated-zone {
-  min-height: 668px;
+  min-height: 100vh;
 }
 
 .decorated-zone::after {
@@ -222,7 +222,7 @@
 
 @media screen and (min-width: 768px) {
   .decorated-zone {
-    min-height: 1024px;
+    min-height: 100vh;
   }
   .header > .logo {
     transform: translateX(-20px);
@@ -276,7 +276,7 @@
 
 @media screen and (min-width: 1024px) {
   .decorated-zone {
-    min-height: 768px;
+    min-height: 100vh;
   }
   .header__theme-menu {
     align-self: start;
